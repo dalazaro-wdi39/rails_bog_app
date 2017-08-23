@@ -1,0 +1,11 @@
+<div class="container">
+  <h3 class="center">Update a Creature</h3>
+
+  <%= form_for @creature do |f| %>
+    <b>Name:</b> <%= f.text_field :name %>
+    <b>Description:</b> <%= f.text_area :description %>
+    <a class="waves-effect waves-light btn">
+      <%= f.submit "Save Creature" %>
+    </a>
+  <% end %>
+</div>

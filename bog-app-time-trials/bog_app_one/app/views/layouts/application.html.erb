@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BogAppOne</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1 class="center"><a href="/creatures">Creatures!</a></h1>
+    <hr>
+    <%= yield %>
+    <hr>
+    <div class="container center">
+      <a class="waves-effect waves-light btn" href="/creatures/new">Create a Creature</a>
+    </div>
+  </body>
+</html>
