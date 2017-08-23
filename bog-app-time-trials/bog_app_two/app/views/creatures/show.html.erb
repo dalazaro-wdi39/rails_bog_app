@@ -1,0 +1,17 @@
+<table class="striped">
+  <thead>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= @creature.name %></td><br>
+        <td><%= @creature.description %></td>
+      </tr>
+  </tbody>
+</table>
+<br>
+<a class="waves-effect waves-light btn"><%= button_to "Delete Creature", @creature, method: :delete %></a>
