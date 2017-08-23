@@ -1,0 +1,17 @@
+<table class="bordered">
+  <thead>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @creatures.each do |creature| %>
+      <tr>
+        <td><%= creature.name %></td>
+        <td><%= creature.description %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,17 @@
+<table class="bordered">
+  <thead>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><%= @creature.name %></td>
+      <td><%= @creature.description %></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<%= button_to "Delete", @creature, method: :delete %>
