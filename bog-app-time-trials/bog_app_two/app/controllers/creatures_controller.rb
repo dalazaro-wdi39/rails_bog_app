@@ -3,6 +3,10 @@ class CreaturesController < ApplicationController
   def index
     # get all creatures from db and save to instance variable
     @creatures = Creature.all
+    count = cookies[:visit_count] || 1
+    cookies[:visit_count] = count.to_i + 1
+    cookies[:are_you_cool] = "hell_yeah"
+    cookies[:whats_the_time] = Time.now
   end
 
   def new
